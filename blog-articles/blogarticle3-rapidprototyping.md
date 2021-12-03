@@ -25,17 +25,39 @@ One such tool for rapid prototyping is [Figma](https://www.figma.com/). Figma is
 
 ## Collaboration 
 When working with small or large teams it is important to effectively communicate design specifications and collaborate on design decisions. When working in a solo capacity it is important to communicate layout, style, and branding choices to the end-user as often as possible. Figma was built from the ground-up to make sharing designs and cross-platform collaboration an integral part of the platform. Every Figma Design file has a "Share" button that allows you to send design assets and grant permissions for viewing and editing the design file. 
-
+ 
 ![figma-share](https://res.cloudinary.com/dzmc7doja/image/upload/v1638299684/blogsite-content/blogarticle3-figmaprototyping/figma-share.png)
 
+Co-editing through figma is also extremely viable because of it's cross-platform compatibility. Not only does figma function as a stand-alone desktop application, it also works as a web application that allows authorized users to view, edit, comment and design from any device/operating system. 
+
 ## CSS Integration 
+The "Inspect" tab in Figma, provides CSS snippets that can be utilized in front-end stylesheets. CSS properties in Figma are auto generated as you edit design files. Depending on how you utilize components and elements in Figma, these CSS snippets can make certain design aspects (i.e. borders, box-shadows, gradients, font-families, etc.) much easier to import into your code. Figma also offers several options for its auto generated snippets: Swift for iOS, CSS for web, and XML for Android.
+
+![figma-inspect](https://res.cloudinary.com/dzmc7doja/image/upload/v1638341317/blogsite-content/blogarticle3-figmaprototyping/figma-inspect.png)
 
 ## Components and Design Elements
+Figma allows designers to create components - which are essentially reusable elements that help create and manage consistent designs across projects. You can create components from any layer or object you've created. These could be buttons, icons, layouts, etc. There are two aspects to a component: 
+
+1. A **Main Component** defines the properties of the Component 
+2. An **Instance** is a copy of the Component you can reuse in designs. Instances are linked to the main component and receive any updates made to the *Main Component* 
+
+You can create components to use within a single file. Or, you can use the Team Library to share components and Styles across files and projects. In order to maintain a fast workflow, there are a few design practices for structuring and working with figma components. 
+
+Use clear naming conventions and frames to organize components - this makes it easy to find and reuse components in the asset panel, swap out related components, and increases usability. Use naming convents that provide context about the function and state of the component. 
+
+#### Example - Forward Slash Naming 
+* Input/Field/Text - Active
+* Input/Field/Text - Default 
+* Input/Field/Text - Disabled
+* Input/Field/Text - Feedback 
+* Input/Field/Text - Filled 
+* Input/Field/Text - View Only
+
+Frame Containers allows for you to group figma components according to their design or functionality, as well as helping to understand relationships between similarly grouped components.
 
 ## Libraries 
 
 ## Community Files
-
 
 ## References
 * Career Foundry: [Rapid Prototyping](https://careerfoundry.com/en/blog/ux-design/rapid-prototyping-guide/) 
