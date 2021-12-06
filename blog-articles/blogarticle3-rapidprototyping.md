@@ -41,19 +41,30 @@ Figma allows designers to create components - which are essentially reusable ele
 1. A **Main Component** defines the properties of the Component 
 2. An **Instance** is a copy of the Component you can reuse in designs. Instances are linked to the main component and receive any updates made to the *Main Component* 
 
-You can create components to use within a single file. Or, you can use the Team Library to share components and Styles across files and projects. In order to maintain a fast workflow, there are a few design practices for structuring and working with figma components. 
+You can create components to use within a single file. Or, you can use the Team Library to share components and Styles across files and projects. There are a number of different design paradigms that can be employed during the design part of the development life-cycle. Figma [Docs](https://help.figma.com/hc/en-us) goes into detail about suitable practices for working with design elements in app. In order to maintain a fast workflow, there are a couple key design practices for structuring figma components that you should implement immediately:
 
+### ↘️ Clear Naming Conventions and Consistent File Naming
 Use clear naming conventions and frames to organize components - this makes it easy to find and reuse components in the asset panel, swap out related components, and increases usability. Use naming convents that provide context about the function and state of the component. 
 
-#### Example - Forward Slash Naming 
+```
+EXAMPLE - FORWARD SLASH NAMING
+
 * Input/Field/Text - Active
 * Input/Field/Text - Default 
 * Input/Field/Text - Disabled
 * Input/Field/Text - Feedback 
 * Input/Field/Text - Filled 
 * Input/Field/Text - View Only
+```
 
-Frame Containers allows for you to group figma components according to their design or functionality, as well as helping to understand relationships between similarly grouped components.
+Keep re-usability at the foreground of your design practices in Figma is made easy by using *Frame Containers*. These are useful in showing relationships across grouped elements on a particular page. Having your design files organized in this manner makes your design development files modular and potentially applicable to other design projects. Frames are also integral in creating interactions (i.e. creating gifs and animated renders), which allow for visual use-case scenarios of product designs.
+
+![figma](https://res.cloudinary.com/dzmc7doja/image/upload/v1638811726/blogsite-content/blogarticle3-figmaprototyping/figma-frames.png)
+
+### ↘️ Using Components to Control Variation 
+Figma allows a wide array of customization in how you control variation among master components and instances. There is a lot of detail in the Figma [Docs](https://help.figma.com/hc/en-us/articles/360038662654-Guide-to-Components-in-Figma), however an important concept to note is when to use variations verses individually crafted components. It's best to use variants when dealing with multiple versions of similar components that share the same properties -- such as state, size, color, toggle state, etc. 
+
+![figma-variants](https://res.cloudinary.com/dzmc7doja/image/upload/v1638813481/blogsite-content/blogarticle3-figmaprototyping/figma-variants.png)
 
 ## Libraries 
 
