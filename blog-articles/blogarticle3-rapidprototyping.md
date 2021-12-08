@@ -35,15 +35,15 @@ The "Inspect" tab in Figma, provides CSS snippets that can be utilized in front-
 
 ![figma-inspect](https://res.cloudinary.com/dzmc7doja/image/upload/v1638341317/blogsite-content/blogarticle3-figmaprototyping/figma-inspect.png)
 
-## Components and Design Elements
+## Components and Design Practices
 Figma allows designers to create components - which are essentially reusable elements that help create and manage consistent designs across projects. You can create components from any layer or object you've created. These could be buttons, icons, layouts, etc. There are two aspects to a component: 
 
 1. A **Main Component** defines the properties of the Component 
 2. An **Instance** is a copy of the Component you can reuse in designs. Instances are linked to the main component and receive any updates made to the *Main Component* 
 
-You can create components to use within a single file. Or, you can use the Team Library to share components and Styles across files and projects. There are a number of different design paradigms that can be employed during the design part of the development life-cycle. Figma [Docs](https://help.figma.com/hc/en-us) goes into detail about suitable practices for working with design elements in app. In order to maintain a fast workflow, there are a couple key design practices for structuring figma components that you should implement immediately:
+You can create components to use within a single file. Or, you can use the Team Library to share components and Styles across files and projects. There are a number of different design paradigms that can be employed during the design part of the development life-cycle. Figma **[Docs](https://help.figma.com/hc/en-us)** goes into detail about suitable practices for working with design elements in app. In order to maintain a fast workflow, there are a couple key design practices for structuring figma components that you should implement immediately:
 
-### ↘️ Clear Naming Conventions and Consistent File Naming
+#### ↘️ Clear Naming Conventions and Consistent File Naming
 Use clear naming conventions and frames to organize components - this makes it easy to find and reuse components in the asset panel, swap out related components, and increases usability. Use naming convents that provide context about the function and state of the component. 
 
 ```
@@ -61,12 +61,14 @@ Keep re-usability at the foreground of your design practices in Figma is made ea
 
 ![figma](https://res.cloudinary.com/dzmc7doja/image/upload/v1638811726/blogsite-content/blogarticle3-figmaprototyping/figma-frames.png)
 
-### ↘️ Using Components to Control Variation 
-Figma allows a wide array of customization in how you control variation among master components and instances. There is a lot of detail in the Figma [Docs](https://help.figma.com/hc/en-us/articles/360038662654-Guide-to-Components-in-Figma), however an important concept to note is when to use variations verses individually crafted components. It's best to use variants when dealing with multiple versions of similar components that share the same properties -- such as state, size, color, toggle state, etc. 
+#### ↘️ Using Components to Control Variation 
+Figma allows a wide array of customization in how you control variation among master components and instances. There is a lot of detail in the Figma **[Docs](https://help.figma.com/hc/en-us/articles/360038662654-Guide-to-Components-in-Figma)**, however an important concept to note is when to use variations verses individually crafted components. It's best to use variants when dealing with multiple versions of similar components that share the same properties -- such as state, size, color, toggle state, etc. 
 
 ![figma-variants](https://res.cloudinary.com/dzmc7doja/image/upload/v1638813481/blogsite-content/blogarticle3-figmaprototyping/figma-variants.png)
 
 ## Libraries 
+Components and Styles can be shared to your team via the Team Library. Team Library allows you to access all saved styles across all the team files and projects - which ultimately improves efficiency and maintains consistency. 
+
 
 ## Community Files
 
