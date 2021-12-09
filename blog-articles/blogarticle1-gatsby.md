@@ -271,8 +271,8 @@ The designation between layouts is applied based on the configuration of the `op
 Utilizing MarkdownX in your Gatsby.js projects really caters to rapid website development. The ability to opt out of using a headless CMS and instead use a local-filesystem data source - with JSX functionality embedded - allows developers to create dynamically rendered webpages with extensibility, customization and blazingly fast load times. Take a look at the links below for a deeper dive into Gatsby.js and MarkdownX. 
 
 #### **Important Links for Gatsby**
-* Documentation for [mdx-js](https://github.com/mdx-js/mdx)  
-* Documentation for [Gatsby.js](https://www.gatsbyjs.com/docs/) 
-* Documentation for [GraphQL](https://www.gatsbyjs.com/docs/graphql/)
-* Documentation for [Gatsby MDX Plugin](https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx/)
-* Documentation for [Gatsby  Markdown Syntax](https://www.gatsbyjs.com/docs/reference/markdown-syntax/)
+📌 Documentation for [mdx-js](https://github.com/mdx-js/mdx) <br/>
+📌 Documentation for [Gatsby.js](https://www.gatsbyjs.com/docs/) <br/>
+📌 Documentation for [GraphQL](https://www.gatsbyjs.com/docs/graphql/) <br/>
+📌 Documentation for [Gatsby MDX Plugin](https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx/) <br/>
+📌 Documentation for [Gatsby  Markdown Syntax](https://www.gatsbyjs.com/docs/reference/markdown-syntax/) <br/>
