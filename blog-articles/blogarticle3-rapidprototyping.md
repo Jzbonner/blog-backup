@@ -67,10 +67,18 @@ Figma allows a wide array of customization in how you control variation among ma
 ![figma-variants](https://res.cloudinary.com/dzmc7doja/image/upload/v1638813481/blogsite-content/blogarticle3-figmaprototyping/figma-variants.png)
 
 ## Libraries 
-Components and Styles can be shared to your team via the Team Library. Team Library allows you to access all saved styles across all the team files and projects - which ultimately improves efficiency and maintains consistency. 
+Components and Styles can be shared to your team via the Team Library. Team Library allows you to access all saved styles across all team files and projects - which ultimately improves efficiency and maintains consistency. Team Libraries offer convenience when wanting to manage typography, color schemes, font-styles, color-styles, grid layouts, icons, etc. Framing components and their corresponding variations creates a modular design system that allows for quick site/page-wide customization. Using Master Components with nested instances creates quick design workflow when new changes are introduced or unforeseen design problems arise. Team Libraries are also subject to Figma's built-in version control system, so updates to the Team Library can always be reverted to previous iterations. 
 
+![figma-library](https://res.cloudinary.com/dzmc7doja/image/upload/v1639027683/blogsite-content/blogarticle3-figmaprototyping/figma-library.gif)
+
+Team Libraries are what actually makes prototyping in Figma such a quick and efficient process. The ability to re-use your design elements and quickly duplicate design decisions from other projects, makes rapid-prototyping a reality in Figma.
 
 ## Community Files
+Utilizing the community section of Figma allows for developers to quickly seek inspiration and even fork existing design files and systems into your own projects. You can search for design files and UI kits, explore top community rated content, or follow your favorite designers and design studios in the Figma community.
+
+![figma-community](https://res.cloudinary.com/dzmc7doja/image/upload/v1639032808/blogsite-content/blogarticle3-figmaprototyping/figma-community.png)
 
 ## References
-* Career Foundry: [Rapid Prototyping](https://careerfoundry.com/en/blog/ux-design/rapid-prototyping-guide/) 
+📌 Career Foundry: [Rapid Prototyping](https://careerfoundry.com/en/blog/ux-design/rapid-prototyping-guide/)<br/> 
+📌 Figma Community: [Explore](https://www.figma.com/community/explore)<br/>
+📌 Figma Docs: [Documentation](https://help.figma.com/hc/en-us)<br/>
