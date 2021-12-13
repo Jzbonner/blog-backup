@@ -44,6 +44,50 @@ If you need to have dynamic images (i.e. they are hosted on a cloud server or be
 * `gatsby-plugin-sharp` - a plugin that exposes several image processing functions built on the **[Sharp Image Processing Library](https://github.com/lovell/sharp)**
 * `gatsby-transform-sharp` - a plugin used to manipulate images using GraphQL queries 
 
+```javascript
+// src/gatsby-config.js
+{
+  resolve: `gatsby-source-filesystem`,
+  options: {
+    path: `${__dirname}/src/images`,
+    name: 'images',
+  },
+  `gatsby-plugin-sharp`,
+  `gatsby-transformer-sharp`,
+  `gatsby-plugin-image`,
+},
+```
+
+`gatsby-plugin-image`, and the above plugins, can be added to your **gatsby-config.js** file to provide three distinctive options for rendered responsive images: 
+
+```javascript
+// example of GraphQL page query 
+export const pageQuery = graphql`
+  query {
+    image: file(relativePath: { eq: "image.jpg" }) {
+      childImageSharp {
+          gatsbyImageData(
+            quality: 90
+            width: 200
+            layout: CONSTRAINED
+          )
+        }
+      }
+    }
+  }
+`
+```
+
+1. Images with fixed width - this option should be used when a specific image size is needed across all device types (`FIXED`)
+2. Images that stretch across their fluid parent container - this option makes the image dependent upon it's parent element container size, which effectively sets a min-width size to that of the container width (`FULL_WIDTH`)
+3. Images that stretch across their container but are limited to a max-width - this option allows for responsive images to adjust their size up until a certain point regardless of the parent element container (`CONSTRAINED`)
+
+Aside from image types `gatsby-plugin-image` also allows you to set fallback options for rendered images using the *Sharp* image processing API. 
+1. `BLURRED`: (default) a blurred image encoded as a base64 data URI
+2. `TRACED_SVG`: a low resolution traced SVG of the rendered image 
+3. `DOMINANT_COLOR`: a solid color, calculated from the dominant color of the image 
+4. `NONE`: no placeholder
+
 
 
 
