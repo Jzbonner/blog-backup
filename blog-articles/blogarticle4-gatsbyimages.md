@@ -1,6 +1,6 @@
 [comment]: # (Refer to this site for further details - https://www.gatsbyjs.com/plugins/gatsby-plugin-image/)
 
-# Responsive Images and High Performance: gatsby-plugin-image
+# Responsive Images and High Performance: `gatsby-plugin-image`
 ## Gatsby Plugin Layer
 Gatsby's plugin layer makes implementing Node.js packages using the Gatsby API quick and efficient. Gatsby's plugins allow for a wide array of functionality, such as: 
 1. **Integrations or "Source Plugins":** these plugins pull data into Gatsby's GraphQL layer and make it available to query from other React components. 
@@ -23,7 +23,7 @@ Gatsby Image refers to the original Gatsby component that works with Gatsby's Gr
 If you are using an image that will be the same each time a component is used, such as a log or front page hero image, you can use the `StaticImage` component. The image can be a local file in your project directory or an image hosted on a remote server. Any remote images are downloaded and resized at build time. 
 
 ```javascript
-// Example of using a StaticImage component in an example .jsx file
+// example of using a StaticImage component in an example .jsx file
 import { StaticImage } from "gatsby-plugin-image" 
 
 export function MaterialDesign() {
@@ -45,7 +45,7 @@ If you need to have dynamic images (i.e. they are hosted on a cloud server or be
 * `gatsby-transform-sharp` - a plugin used to manipulate images using GraphQL queries 
 
 ```javascript
-// src/gatsby-config.js
+// example of src/gatsby-config.js
 {
   resolve: `gatsby-source-filesystem`,
   options: {
@@ -70,6 +70,7 @@ export const pageQuery = graphql`
             quality: 90
             width: 200
             layout: CONSTRAINED
+	    placeholder: DOMINANT_COLOR
           )
         }
       }
@@ -88,8 +89,47 @@ Aside from image types `gatsby-plugin-image` also allows you to set fallback opt
 3. `DOMINANT_COLOR`: a solid color, calculated from the dominant color of the image 
 4. `NONE`: no placeholder
 
+![gatsby-placeholder](https://res.cloudinary.com/dzmc7doja/image/upload/v1639511497/blogsite-content/blogarticle4-gatsbyimage/gatsby-placeholder.gif)
 
+### Putting It All Together
+When using the `<GatsbyImage />` component in your jsx file the configuration from your gatsby-config.js file and the property values set in your graphql pageQuery, will be applied to all rendered images on that page.
+> The `getImage()` function is an optional helper to make your code more readable. It takes a `File` and returns `file.childImageSharp.gatsbyImageData`, which can be passed to the `GatsbyImage` component.
 
+```javascript
+import { graphql } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
+function BlogPost({ data }) {
+  const image = getImage(data.blogPost.avatar)
+  return (
+    <section>
+      <h2>{data.blogPost.title}</h2>
+      <GatsbyImage image={image} alt={data.blogPost.author} />
+      <p>{data.blogPost.body}</p>
+    </section>
+  )
+}
 
+export const pageQuery = graphql`
+  query {
+    blogPost(id: { eq: $Id }) {
+      title
+      body
+      author
+      avatar {
+        childImageSharp {
+          gatsbyImageData(
+            width: 200
+            placeholder: BLURRED
+            formats: [AUTO, WEBP, AVIF]
+          )
+        }
+      }
+    }
+  }
+`
+```
 
+## References 
+📌 Gatsby Image Plugin: **[Documentation](https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-plugin-image/)**<br />
+📌 Gatsby Plugin Image Repository: **[Github](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-image)**
