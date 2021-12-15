@@ -2,6 +2,8 @@
 [comment]: # (Images will not be rendered in Markdown this is just to give reference to the proposed image) 
 
 # JavaScript - ES6 Syntax and Core Functionality
+This is part 1 in a series on the JavaScript programming language, that goes in depth on syntax, core functionality and best practices. Future articles to come include: Functions and function properties, DOM Manipulation, UI/UX Libraries, and Error Handling. 
+
 ## Part 1: Var, Let, Const and the Importance of Scope
 Variable scoping is not a new feature to JavaScript, the use of `var` allowed for variables to be declared in a global manner; but there was nothing built into JavaScript that provided proper lexical scoping. *Lexical scoping* is a convention that sets the scope or range of functionality of a variable so that it may only be referenced from within the block of code in which it is defined. A **variable** by definition is a named space in the memory that stores values. Variable names are called *identifiers* and have a set of naming conventions that must be followed: 
   1. Identifiers can't be keywords 
