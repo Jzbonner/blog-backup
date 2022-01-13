@@ -145,3 +145,6 @@ console.log(`this is the person's new age: ${person.age}`) // this is the person
 console.log(`this is the person's new job: ${person.job}`) // this is the person's new job: data scientist 
 ```
 
+## References 
+📌Exploring ES6: **[Online Book](https://exploringjs.com/es6/)** <br />
+📌ECMAScript New Features: **[Documentation](http://es6-features.org/#Constants)**
