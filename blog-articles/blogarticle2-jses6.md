@@ -146,5 +146,5 @@ console.log(`this is the person's new job: ${person.job}`) // this is the person
 ```
 
 ## References 
-📌Exploring ES6: **[Online Book](https://exploringjs.com/es6/)** <br />
-📌ECMAScript New Features: **[Documentation](http://es6-features.org/#Constants)**
+📌 Exploring ES6: **[Online Book](https://exploringjs.com/es6/)** <br />
+📌 ECMAScript New Features: **[Documentation](http://es6-features.org/#Constants)**
